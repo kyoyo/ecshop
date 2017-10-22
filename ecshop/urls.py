@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('shop.urls',namespace='shop',app_name='shop')),
     url(r'', include('user.urls',namespace='user',app_name='user')),
+    url(r'', include('product.urls',namespace='product',app_name='product')),
     # 配置上传文件的访问处理函数
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
     url(r'^static/(?P<path>.*)$', serve, {'document_root': STATIC_ROOT}),

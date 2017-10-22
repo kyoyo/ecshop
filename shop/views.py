@@ -46,20 +46,7 @@ class IndexView(ListView):
 
         return category_list
 
-# class IndexView(ArticleListView):
-#     template_name = 'home/home.html'
 
-    # def get_queryset(self):
-    #     article_list = Article.objects.all()
-    #     return article_list
-
-
-class RegisterView(FormView):
-    pass
-
-class LoginView(FormView):
-
-    pass
 
 
 

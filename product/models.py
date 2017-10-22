@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import datetime
-
+from django.core.urlresolvers import reverse
 
 # Create your models here.
 
@@ -57,3 +57,8 @@ class Goods(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('product:detail',kwargs = {
+            'goods_id':self.id
+        })
