@@ -1,0 +1,124 @@
+{% load static %}
+{% load shop_tags %}
+
+{% if category and category.sort == 1 %}
+<div id="f1">
+    <!--甜点-->
+
+    <div class="am-container ">
+        <div class="shopTitle ">
+            <h4>{{category.name}}</h4>
+            <h3>{{category.desc}}</h3>
+            <div class="today-brands ">
+                <a href="# ">桂花糕</a>
+                <a href="# ">奶皮酥</a>
+                <a href="# ">栗子糕 </a>
+                <a href="# ">马卡龙</a>
+                <a href="# ">铜锣烧</a>
+                <a href="# ">豌豆黄</a>
+            </div>
+            <span class="more ">
+                    <a href="# ">更多美味<i class="am-icon-angle-right" style="padding-left:10px ;" ></i></a>
+                        </span>
+        </div>
+    </div>
+
+    <div class="am-g am-g-fixed floodFour">
+        <div class="am-u-sm-5 am-u-md-4 text-one list ">
+            <div class="word">
+                <a class="outer" href="#"><span class="inner"><b class="text">龙眼</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">樱桃</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">橙子</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">蓝莓</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">苹果</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">布丁</b></span></a>
+            </div>
+            <a href="# ">
+                <div class="outer-con ">
+                    <div class="title ">
+                        开抢啦！
+                    </div>
+                    <div class="sub-title ">
+                        零食大礼包
+                    </div>
+                </div>
+                <img src="{% static 'images/act1.png ' %}" />
+            </a>
+            <div class="triangle-topright"></div>
+        </div>
+  
+
+        {% load_floor_goods_detail goods_list 1 %}
+        {% load_floor_goods_detail goods_list 2 %}
+        {% load_floor_goods_detail goods_list 3 %}
+        {% load_floor_goods_detail goods_list 4 %}
+        {% load_floor_goods_detail goods_list 5 %}
+        {% load_floor_goods_detail goods_list 6 %}
+
+    </div>
+
+    <div class="clear "></div>
+</div>
+
+{% endif %}
+
+{% if category and category.sort == 2 %}
+<div id="f2">
+    <!--甜点-->
+
+    <div class="am-container ">
+        <div class="shopTitle ">
+            <h4>{{category.name}}</h4>
+            <h3>{{category.desc}}</h3>
+            <div class="today-brands ">
+                <a href="# ">腰果</a>
+                <a href="# ">松子</a>
+                <a href="# ">夏威夷果 </a>
+                <a href="# ">碧根果</a>
+                <a href="# ">开心果</a>
+                <a href="# ">核桃仁</a>
+            </div>
+            <span class="more ">
+                    <a href="# ">更多美味<i class="am-icon-angle-right" style="padding-left:10px ;" ></i></a>
+                        </span>
+        </div>
+    </div>
+
+    <div class="am-g am-g-fixed floodFour">
+        <div class="am-u-sm-5 am-u-md-4 text-one list ">
+            <div class="word">
+                <a class="outer" href="#"><span class="inner"><b class="text">腰果</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">松子</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">夏威夷果</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">碧根果</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">开心果</b></span></a>
+                <a class="outer" href="#"><span class="inner"><b class="text">核桃仁</b></span></a>
+            </div>
+            <a href="# ">
+                <div class="outer-con ">
+                    <div class="title ">
+                        开抢啦！
+                    </div>
+                    <div class="sub-title ">
+                        零食大礼包
+                    </div>
+                </div>
+                <img src="{% static 'images/act1.png ' %}" />
+            </a>
+            <div class="triangle-topright"></div>
+        </div>
+
+
+        {% load_floor_goods_detail goods_list 1 %}
+        {% load_floor_goods_detail goods_list 2 %}
+        {% load_floor_goods_detail goods_list 3 %}
+        {% load_floor_goods_detail goods_list 4 %}
+        {% load_floor_goods_detail goods_list 5 %}
+        {% load_floor_goods_detail goods_list 6 %}
+
+    </div>
+
+    <div class="clear "></div>
+</div>
+
+{% endif %}

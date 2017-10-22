@@ -1,0 +1,85 @@
+{% load static %}
+{% load shop_tags %}
+
+{% if order_value == 1 %}
+<div class="am-u-sm-7 am-u-md-4 text-two sug">
+    <div class="outer-con ">
+        <div class="title ">
+            {{ goods_info.name }}
+        </div>
+        <div class="sub-title ">
+            ¥{{ goods_info.price }}
+        </div>
+        <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
+    </div>
+    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+</div>
+{% elif order_value == 2 %}
+<div class="am-u-sm-7 am-u-md-4 text-two">
+    <div class="outer-con ">
+        <div class="title ">
+            {{goods_info.name}}
+        </div>
+        <div class="sub-title ">
+            ¥{{goods_info.price}}
+        </div>
+        <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
+    </div>
+    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+</div>
+
+{% elif order_value == 3 %}
+<div class="am-u-sm-3 am-u-md-2 text-three big">
+    <div class="outer-con ">
+        <div class="title ">
+            {{goods_info.name}}
+        </div>
+        <div class="sub-title ">
+            ¥{{goods_info.price}}
+        </div>
+        <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
+    </div>
+    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+</div>
+{% elif order_value == 4 %}
+<div class="am-u-sm-3 am-u-md-2 text-three sug">
+    <div class="outer-con ">
+        <div class="title ">
+            {{goods_info.name}}
+        </div>
+        <div class="sub-title ">
+            ¥{{goods_info.price}}
+        </div>
+        <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
+    </div>
+    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+</div>
+
+{% elif order_value == 5 %}
+<div class="am-u-sm-3 am-u-md-2 text-three ">
+    <div class="outer-con ">
+        <div class="title ">
+            {{goods_info.name}}
+        </div>
+        <div class="sub-title ">
+            ¥{{goods_info.price}}
+        </div>
+        <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
+    </div>
+    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+</div>
+
+{% elif order_value == 6 %}
+<div class="am-u-sm-3 am-u-md-2 text-three last big ">
+    <div class="outer-con ">
+        <div class="title ">
+            {{goods_info.name}}
+        </div>
+        <div class="sub-title ">
+            ¥{{goods_info.price}}
+        </div>
+        <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
+    </div>
+    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+</div>
+{% endif %}
