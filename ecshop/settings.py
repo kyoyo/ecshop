@@ -188,7 +188,7 @@ SITE_DESCRIPTION = ''
 SITE_SEO_DESCRIPTION = ''
 ARTICLE_SUB_LENGTH = 50
 
-PAGINATE_BY = 4
+PAGINATE_BY = 12
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
