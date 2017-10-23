@@ -60,5 +60,6 @@ class Goods(models.Model):
 
     def get_absolute_url(self):
         return reverse('product:detail',kwargs = {
+            'category_id':self.category.id,
             'goods_id':self.id
         })

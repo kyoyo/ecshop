@@ -1,0 +1,16 @@
+{% load static %}
+
+
+<li>
+    <div class="i-pic limit">
+        <a href="{{goods.get_absolute_url}}"><img src="{% get_media_prefix %}{{goods.image}}" /></a>
+        <p class="title fl">{{goods.name}}</p>
+        <p class="price fl">
+            <b>¥</b>
+            <strong>{{goods.price}}</strong>
+        </p>
+        <p class="number fl">
+            销量<span>{{goods.sales_count}}</span>
+        </p>
+    </div>
+</li>

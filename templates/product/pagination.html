@@ -1,0 +1,25 @@
+<!--分页 -->
+<ul class="am-pagination am-pagination-right">
+    {% if page_obj.has_previous %}
+    <li><a href="{% url 'product:page' category_id page_obj.previous_page_number %}">&laquo;</a></li>
+    {% else %}
+    <li class="am-disabled"><a href="#">&laquo;</a></li>
+    {% endif %}
+
+
+    {% for page_num in paginator.page_range %}
+
+        {% if page_num == page_obj.number %}
+            <li class="am-active"><a href="#">{{page_num}}</a></li>
+        {% else %}
+            <li><a href="{% url 'product:page' category_id page_num %}">{{page_num}}</a></li>
+        {% endif %}
+
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+    <li><a href="{% url 'product:page' category_id page_obj.next_page_number %}">&raquo;</a></li>
+    {% else %}
+    <li class="am-disabled"><a href="#">&raquo;</a></li>
+    {% endif %}
+</ul>

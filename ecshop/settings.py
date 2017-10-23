@@ -188,7 +188,7 @@ SITE_DESCRIPTION = ''
 SITE_SEO_DESCRIPTION = ''
 ARTICLE_SUB_LENGTH = 50
 
-PAGINATE_BY = 5
+PAGINATE_BY = 4
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -196,3 +196,6 @@ STATICFILES_FINDERS = (
     # other
     'compressor.finders.CompressorFinder',
 )
+
+CATEGORY_ID_TIANPIN = 1
+CATEGORY_ID_JIANGUO = 2
