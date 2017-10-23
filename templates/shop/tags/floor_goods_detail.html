@@ -39,7 +39,7 @@
         </div>
         <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
     </div>
-    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+    <a href="{{goods_info.get_absolute_url}}"><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
 </div>
 {% elif order_value == 4 %}
 <div class="am-u-sm-3 am-u-md-2 text-three sug">
@@ -52,7 +52,7 @@
         </div>
         <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
     </div>
-    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+    <a href="{{goods_info.get_absolute_url}}"><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
 </div>
 
 {% elif order_value == 5 %}
@@ -66,7 +66,7 @@
         </div>
         <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
     </div>
-    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+    <a href="{{goods_info.get_absolute_url}}"><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
 </div>
 
 {% elif order_value == 6 %}
@@ -80,6 +80,6 @@
         </div>
         <i class="am-icon-shopping-basket am-icon-md  seprate"></i>
     </div>
-    <a href="# "><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
+    <a href="{{goods_info.get_absolute_url}}"><img src="{% get_media_prefix %}{{goods_info.image}}" /></a>
 </div>
 {% endif %}
