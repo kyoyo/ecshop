@@ -19,6 +19,7 @@ from cart.models import Cart,Item
 class CartDetailView(TemplateView):
     template_name = 'order/shopcart.html'
 
+#
 # class AddToCartView(TemplateView):
 #     template_name = 'order/addToCart.html'
 
