@@ -4,7 +4,7 @@
 {% block title %}商品已成功加入购物车{% endblock %}
 
 {% block css_js %}
-<link href="{% static 'css/jsstyle.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/jsstyle.css' %}" rel="stylesheet" type="text/css"/>
 {% endblock %}
 
 {% include 'top.html' %}
@@ -12,18 +12,91 @@
 {% block main%}
 
 <div class="clear"></div>
-<br><br><br>
-商品已成功加入购物车
 
-<div class="tb-detail-price">
-    <div id="holyshit269" class="submitOrder">
-        <div class="go-btn-wrap">
-            <a id="J_Go" href="{% url 'order:success' %}" class="btn-go" tabindex="0" title="查看商品详细">查看商品详细</a>
-        </div>
-    </div>
-    <div id="holyshit269" class="submitOrder">
-        <div class="go-btn-wrap">
-            <a id="J_Go" href="{% url 'order:success' %}" class="btn-go" tabindex="0" title="去购物车结算">去购物车结算</a>
+
+<style>
+    .success-wrap {
+    height: 145px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.ftx-02, .ftx02 {
+    color: #71b247;
+}
+
+.succeed-box .btn-tobback {
+    padding: 0 30px;
+    margin-right: 10px;
+    background: #fff;
+    color: #e4393c;
+    border: 1px solid #fff;
+}
+
+.succeed-box .btn-addtocart {
+    position: relative;
+    width: 136px;
+    padding-left: 30px;
+    background: #e4393c;
+    border: 1px solid #e4393c;
+    color: #fff;
+}
+
+.succeed-box .btn-addtocart, .succeed-box .btn-tobback, .succeed-box .btn-viewcart {
+    display: inline-block;
+    height: 34px;
+    line-height: 36px;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right:20px;
+}
+
+.succeed-box .success-top .error-icon, .succeed-box .success-top .succ-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    background: url(//misc.360buyimg.com/user/cart/widget/addtocart-201608/i/addtocart-icons.png) 0 0 no-repeat;
+}
+
+.succeed-box .success-top {
+    position: relative;
+    padding-left: 35px;
+    margin: 20px 0;
+}
+
+.succeed-box .success-btns {
+    float: right;
+    font-size: 0;
+    overflow: hidden;
+}
+
+</style>
+
+<div class="success-wrap">
+    <div class="w" id="result">
+        <div class="m succeed-box">
+            <div class="mc success-cont">
+                <div class="success-lcol">
+                    <div class="success-top"><b class="succ-icon"></b>
+                        <h3 class="ftx-02">商品已成功加入购物车！</h3></div>
+                </div>
+                <div class="success-btns success-btns-new">
+                    <div class="success-ad"><a href="#none"></a></div>
+                    <div class="clr"></div>
+                    <div><a class="btn-tobback" href="//item.jd.com/.html" target="_blank"
+                            clstag="pageclick|keycount|201601152|3">查看商品详情</a><a class="btn-addtocart"
+                                                                                 href="//cart.jd.com/cart.action?r=0.8391365266987827"
+                                                                                 id="GotoShoppingCart"
+                                                                                 clstag="pageclick|keycount|201601152|4"><b></b>去购物车结算</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
