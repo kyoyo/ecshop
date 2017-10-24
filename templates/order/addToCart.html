@@ -1,0 +1,32 @@
+{% extends 'order/order_base.html' %}
+{% load static %}
+
+{% block title %}商品已成功加入购物车{% endblock %}
+
+{% block css_js %}
+<link href="{% static 'css/jsstyle.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% include 'top.html' %}
+
+{% block main%}
+
+<div class="clear"></div>
+<br><br><br>
+商品已成功加入购物车
+
+<div class="tb-detail-price">
+    <div id="holyshit269" class="submitOrder">
+        <div class="go-btn-wrap">
+            <a id="J_Go" href="{% url 'order:success' %}" class="btn-go" tabindex="0" title="查看商品详细">查看商品详细</a>
+        </div>
+    </div>
+    <div id="holyshit269" class="submitOrder">
+        <div class="go-btn-wrap">
+            <a id="J_Go" href="{% url 'order:success' %}" class="btn-go" tabindex="0" title="去购物车结算">去购物车结算</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

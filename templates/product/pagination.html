@@ -1,4 +1,7 @@
 <!--分页 -->
+
+<!--简单分页 -->
+<!--
 <ul class="am-pagination am-pagination-right">
     {% if page_obj.has_previous %}
     <li><a href="{% url 'product:page' category_id page_obj.previous_page_number %}">&laquo;</a></li>
@@ -23,3 +26,49 @@
     <li class="am-disabled"><a href="#">&raquo;</a></li>
     {% endif %}
 </ul>
+-->
+
+<!--完善分页 -->
+{% if is_paginated %}
+<ul class="am-pagination am-pagination-right">
+    {% if page_obj.has_previous %}
+        <li><a href="{% url 'product:page' category_id page_obj.previous_page_number %}">&laquo;</a></li>
+    {% else %}
+        <li class="am-disabled"><a href="#">&laquo;</a></li>
+    {% endif %}
+
+    {% if first %}
+
+        <li><a href="{% url 'product:page' category_id 1 %}">1</a></li>
+    {% endif %}
+
+    {% if left %}
+        {% if left_has_more %}
+            <li class="am-active">...</li>
+        {% endif %}
+        {% for i in left %}
+            <li><a href="{% url 'product:page' category_id i %}">{{i}}</a></li>
+        {% endfor %}
+    {% endif %}
+
+    <li class="am-active"><a href="#">{{ page_obj.number }}</a></li>
+
+    {% if right %}
+        {% for i in right %}
+            <li><a href="{% url 'product:page' category_id i %}">{{i}}</a></li>
+        {% endfor %}
+        {% if right_has_more %}
+            <li class="am-active">...</li>
+        {% endif %}
+    {% endif %}
+    {% if last %}
+            <li><a href="{% url 'product:page' category_id paginator.num_pages %}">{{ paginator.num_pages }}</a></li>
+    {% endif %}
+
+    {% if page_obj.has_next %}
+        <li><a href="{% url 'product:page' category_id page_obj.next_page_number %}">&raquo;</a></li>
+    {% else %}
+        <li class="am-disabled"><a href="#">&raquo;</a></li>
+    {% endif %}
+</ul>
+{% endif %}

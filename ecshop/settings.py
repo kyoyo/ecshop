@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'user',
     'shop',
     'product',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -183,7 +184,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 SITE_NAME = ''
-SITE_URL = '127.0.0.1:8060'
+SITE_URL = 'http://127.0.0.1:8060/'
 SITE_DESCRIPTION = ''
 SITE_SEO_DESCRIPTION = ''
 ARTICLE_SUB_LENGTH = 50

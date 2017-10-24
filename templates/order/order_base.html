@@ -3,40 +3,42 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>{% block title %}{% endblock %}</title>
 
+
     <!--common -->
     <link href="{% static 'AmazeUI-2.4.2/assets/css/amazeui.css' %}" rel="stylesheet" type="text/css" />
-    <link href="{% static 'AmazeUI-2.4.2/assets/css/admin.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'basic/css/demo.css' %}" rel="stylesheet" type="text/css" />
+    <link  href="{% static 'css/cartstyle.css' %}" rel="stylesheet" type="text/css" />
 
-    <script src="{% static 'basic/js/jquery-1.7.min.js' %}"></script>
+
+    <!--shopcart -->
+
+    <link type="text/css" href="{% static 'css/optstyle.css' %}" rel="stylesheet" />
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!--pay -->
 
 
-    <!--goods_list -->
+    <script type="text/javascript" src="{% static 'js/address.js' %}"></script>
+
+
+    <!--extra -->
     {% block css_js %}
 
     {% endblock %}
 
-    <!--goods_detail -->
-    <link type="text/css" href="{% static 'css/optstyle.css' %}" rel="stylesheet" />
-    <link href="{% static 'css/style.css' %} " rel="stylesheet" type="text/css">
-
-    <script src="{% static 'basic/js/quick_links.js' %}"></script>
-    <script type="text/javascript" src="{% static 'AmazeUI-2.4.2/assets/js/amazeui.js' %}"></script>
-    <script src="{% static 'js/jquery.imagezoom.min.js' %}"></script>
-    <script src="{% static 'js/jquery.flexslider.js' %}"></script>
-    <script src="{% static 'js/list.js' %}"></script>
-
 </head>
+
 
 <body>
 
-{% block top %}
 
 {% include 'top.html' %}
 
@@ -58,22 +60,18 @@
         </div>
     </div>
 </div>
-
-
-{% endblock %}
+<div class="clear"></div>
 
 {% block main%}
 
 {% endblock %}
 
-<div class="clear"></div>
-
 {% block footer %}
-{% include "footer.html" %}
+
 {% endblock %}
 
 {% block sidebar %}
-{% include 'sidebar.html' %}
+
 {% endblock%}
 </body>
 
