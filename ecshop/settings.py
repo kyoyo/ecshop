@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'user',
     'shop',
     'product',
-    'cart',
+    'order',
 ]
 
 MIDDLEWARE = [
@@ -163,6 +163,7 @@ USE_TZ = True
 TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 DATE_TIME_FORMAT = '%Y-%m-%d'
 
+CART_ID = 'CART-ID'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

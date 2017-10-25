@@ -2,4 +2,3 @@ Django==1.10
 django-material
 Pillow
 django-compressor
-django-cart
