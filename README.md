@@ -17,6 +17,7 @@
 
 ![](http://github.com/kyoyo/ecshop/raw/master/images/intro3.png)
 
+![](http://github.com/kyoyo/ecshop/raw/master/images/intro5.jpg)
 
 ### 后台界面
 
