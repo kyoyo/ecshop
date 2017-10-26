@@ -11,22 +11,22 @@
 
 ### 前台界面
 
-![](http://github.com/kyoyo/ecshop/raw/master/images/intro1.jpg)
+![](http://github.com/kyoyo/ecshop/raw/master/images/intro1.png)
 
-![](http://github.com/kyoyo/ecshop/raw/master/images/intro2.jpg)
+![](http://github.com/kyoyo/ecshop/raw/master/images/intro2.png)
 
-![](http://github.com/kyoyo/ecshop/raw/master/images/intro3.jpg)
+![](http://github.com/kyoyo/ecshop/raw/master/images/intro3.png)
 
 
 ### 后台界面
 
-![](http://github.com/kyoyo/ecshop/raw/master/images/intro4.jpg)
+![](http://github.com/kyoyo/ecshop/raw/master/images/intro4.png)
 
 
-###计划增加功能
+### 计划增加功能
 
 - 后台大数据分析并可视化
-  >使用技术:spark
+  > 使用技术:spark
 
 - 用户推荐系统
 - 深度学习应用化
