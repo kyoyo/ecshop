@@ -23,10 +23,10 @@
 ![](http://github.com/kyoyo/ecshop/raw/master/images/intro4.png)
 
 
-###计划增加功能
+### 计划增加功能
 
 - 后台大数据分析并可视化
-  >使用技术:spark
+  > 使用技术:spark
 
 - 用户推荐系统
 - 深度学习应用化
