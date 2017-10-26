@@ -1,5 +1,6 @@
 {% load static %}
 
+{% load shop_tags %}
 <div class="hmtop">
     <!--顶部导航条 -->
     <div class="am-container header">
@@ -24,7 +25,7 @@
                 <div class="menu-hd MyShangcheng"><a href="/userprofile" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
             </div>
             <div class="topMessage mini-cart">
-                <div class="menu-hd"><a id="mc-menu-hd" href="{% url 'order:cart' %}" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+                <div class="menu-hd"><a id="mc-menu-hd" href="{% url 'order:cart' %}" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">{% get_cart_count request %}</strong></a></div>
             </div>
             <div class="topMessage favorite">
                 <div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>

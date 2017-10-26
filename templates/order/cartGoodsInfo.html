@@ -14,7 +14,7 @@
         </div>
         <div class="item-info">
             <div class="item-basic-info">
-                <a href="#" target="_blank" title="{{item.name}}" class="item-title J_MakePoint" data-point="tbcart.8.11">{{item.name}}</a>
+                <a href="#" target="_blank" title="{{item.name}}" class="item-title J_MakePoint" data-point="tbcart.8.11">{{item.product.name}}</a>
             </div>
         </div>
     </li>
@@ -30,7 +30,7 @@
         <div class="item-price price-promo-promo">
             <div class="price-content">
                 <div class="price-line">
-                    <em class="price-original">{{item.market_price}}</em>
+                    <em class="price-original">{{item.product.market_price}}</em>
                 </div>
                 <div class="price-line">
                     <em class="J_Price price-now" tabindex="0">{{item.unit_price}}</em>
@@ -51,7 +51,7 @@
     </li>
     <li class="td td-sum">
         <div class="td-inner">
-            <em tabindex="0" class="J_ItemSum number">{{item.amount}}</em>
+            <em tabindex="0" class="J_ItemSum number"></em>
         </div>
     </li>
     <li class="td td-op">

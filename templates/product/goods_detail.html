@@ -93,7 +93,7 @@
             <!--名称-->
             <div class="tb-detail-hd">
                 <h1>
-                    良品铺子 手剥松子218g 坚果炒货 巴西松子
+                    {{goods.name}}
                 </h1>
             </div>
             <div class="tb-detail-list">
@@ -101,11 +101,11 @@
                 <div class="tb-detail-price">
                     <li class="price iteminfo_price">
                         <dt>促销价</dt>
-                        <dd><em>¥</em><b class="sys_item_price">56.90</b>  </dd>
+                        <dd><em>¥</em><b class="sys_item_price">{{goods.price}}</b>  </dd>
                     </li>
                     <li class="price iteminfo_mktprice">
                         <dt>原价</dt>
-                        <dd><em>¥</em><b class="sys_item_mktprice">98.00</b></dd>
+                        <dd><em>¥</em><b class="sys_item_mktprice">{{goods.market_price}}</b></dd>
                     </li>
                     <div class="clear"></div>
                 </div>
@@ -190,7 +190,7 @@
                         <input id="min" class="am-btn am-btn-default" name="" type="button" value="-" />
                         <input id="quantity" name="quantity" type="text" value="1" style="width:30px;" />
                         <input id="add" class="am-btn am-btn-default" name="" type="button" value="+" />
-                        <span id="Stock" class="tb-hidden">库存<span class="stock">1000</span>件</span>
+                        <span id="Stock" class="tb-hidden">库存<span class="stock">{{goods.count}}</span>件</span>
                     </dd>
 
                     </div>

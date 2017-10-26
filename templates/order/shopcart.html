@@ -3,6 +3,12 @@
 
 {% block title %}购物车页面{% endblock %}
 
+{% block css_js %}
+<link type="text/css" href="{% static 'css/optstyle.css' %}" rel="stylesheet" />
+<script src="{% static 'js/jquery.js' %}"></script>
+{% endblock %}
+
+
 {% include 'top.html' %}
 
 {% block main%}

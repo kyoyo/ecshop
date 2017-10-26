@@ -9,7 +9,8 @@ class ItemAlreadyExists(Exception):
 class ItemDoesNotExist(Exception):
     pass
 
-class Cart:
+
+class CartManager:
     def __init__(self, request):
         cart_id = request.session.get(settings.CART_ID)
         if cart_id:
@@ -28,7 +29,7 @@ class Cart:
     def new(self, request):
         cart = models.Cart()
         cart.save()
-        request.session[CART_ID] = cart.id
+        request.session[settings.CART_ID] = cart.id
         return cart
 
     def add(self, product, unit_price, quantity=1):

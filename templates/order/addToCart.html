@@ -89,11 +89,9 @@
                 <div class="success-btns success-btns-new">
                     <div class="success-ad"><a href="#none"></a></div>
                     <div class="clr"></div>
-                    <div><a class="btn-tobback" href="//item.jd.com/.html" target="_blank"
-                            clstag="pageclick|keycount|201601152|3">查看商品详情</a><a class="btn-addtocart"
-                                                                                 href="//cart.jd.com/cart.action?r=0.8391365266987827"
-                                                                                 id="GotoShoppingCart"
-                                                                                 clstag="pageclick|keycount|201601152|4"><b></b>去购物车结算</a>
+                    <div>
+                        <a class="btn-tobback" href="{{goods.get_absolute_url}}" clstag="pageclick|keycount|201601152|3">查看商品详情</a>
+                        <a class="btn-addtocart" href="{% url 'order:cart' %}" id="GotoShoppingCart" clstag="pageclick|keycount|201601152|4"><b></b>去购物车结算</a>
                     </div>
                 </div>
             </div>

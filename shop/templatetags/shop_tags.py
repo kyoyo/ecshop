@@ -1,5 +1,8 @@
 from django import template
 from product.models import Goods
+from django.conf import settings
+from order.cart import CartManager
+
 register = template.Library()
 
 
@@ -20,3 +23,10 @@ def load_floor_goods_detail(goods_list,order_value):
         'goods_info':goods_info,
         'order_value': order_value
     }
+
+@register.simple_tag
+def get_cart_count(request):
+    #cart_id = request.session.get(settings.CART_ID)
+    cartManager = CartManager(request)
+
+    return cartManager.count()
