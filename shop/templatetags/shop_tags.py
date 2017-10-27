@@ -15,6 +15,7 @@ def load_floor_goods(category):
         'category':category,
     }
 
+
 @register.inclusion_tag('shop/tags/floor_goods_detail.html')
 def load_floor_goods_detail(goods_list,order_value):
     goods_info = goods_list.get(order_value = order_value)
@@ -24,9 +25,9 @@ def load_floor_goods_detail(goods_list,order_value):
         'order_value': order_value
     }
 
-@register.simple_tag
-def get_cart_count(request):
-    #cart_id = request.session.get(settings.CART_ID)
-    cartManager = CartManager(request)
 
-    return cartManager.count()
+@register.simple_tag
+def get_cart(request):
+    cart = CartManager.get_cart(request)
+
+    return cart

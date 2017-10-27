@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load shop_tags %}
 
 <!--引导 -->
 <div class="navCir">
@@ -34,13 +34,13 @@
 
             </div>
             <div id="shopCart " class="item ">
-                <a href="# ">
+                <a href="{% url 'order:cart' %}" >
                     <span class="message "></span>
                 </a>
                 <p>
                     购物车
                 </p>
-                <p class="cart_num ">0</p>
+                <p class="cart_num ">{% get_cart request as cart%}{% if cart%} {{cart.total_quantity}} {% else %} 0 {% endif%}</p>
             </div>
             <div id="asset " class="item ">
                 <a href="# ">

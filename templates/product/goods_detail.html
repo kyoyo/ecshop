@@ -163,8 +163,10 @@
                                 <a href="javascript:;" title="关闭" class="close">×</a>
                             </div>
                             <div class="theme-popbod dform">
-                                <form class="theme-signin" id="addToCartForm" name="addToCartForm" action="{% url 'order:addToCart' goods.id %}" method="post">
+                                <form class="theme-signin" id="cartForm" name="cartForm" action="{% url 'order:cartAction'%}?action=add" method="post">
                                     {% csrf_token %}
+                                    <input id="goods_id" name="goods_id" type="hidden" value="{{goods.id}}" />
+
                                     <div class="theme-signin-left">
 
                                         <div class="theme-options">
@@ -253,7 +255,7 @@
     </li>
     <li>
         <div class="clearfix tb-btn tb-btn-basket theme-login">
-            <a id="LikBasket" title="加入购物车" href="javascript:document.getElementById('addToCartForm').submit();"><i></i>加入购物车</a>
+            <a id="LikBasket" title="加入购物车" href="javascript:document.getElementById('cartForm').submit();"><i></i>加入购物车</a>
         </div>
     </li>
 </div>

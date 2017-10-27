@@ -54,10 +54,11 @@
 						</div>
 						<div class="clear"></div>
 						<div class="bundle-main">
-
-						{% for item in cart_item_list %}
-							{% include 'order/cartGoodsInfo.html' %}
-						{% endfor %}
+							<form name="" action="">
+								{% for item in cart_item_list %}
+									{% include 'order/cartGoodsInfo.html' %}
+								{% endfor %}
+							</form>
 
 						</div>
 					</div>
@@ -90,7 +91,7 @@
 					</div>
 					<div class="price-sum">
 						<span class="txt">合计:</span>
-						<strong class="price">¥<em id="J_Total">{{summary}}</em></strong>
+						<strong class="price">¥<em id="J_Total">{{cart.total_price}}</em></strong>
 					</div>
 					<div class="btn-area">
 						<a href="{% url 'order:pay' %}" id="J_Go" class="submit-btn submit-btn-disabled" aria-label="请注意如果没有选择宝贝，将无法结算">
