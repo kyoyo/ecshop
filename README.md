@@ -1,7 +1,7 @@
 
 ## 用django实现的网上商城。
 ### 创建此商城的目的
-   将自己学习的知识串起来
+- 将自己学习的知识串起来
 
 ### 初步实现功能
 - 商品管理
@@ -15,7 +15,6 @@
 
 ![](https://github.com/kyoyo/ecshop/raw/master/images/intro2.png)
 
-![](https://github.com/kyoyo/ecshop/raw/master/images/intro3.png)
 
 
 ### 后台界面
