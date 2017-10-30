@@ -11,15 +11,15 @@
 
 ### 前台界面
 
-![](https://github.com/kyoyo/ecshop/raw/master/images/intro1.png)
+![](images/intro1.png)
 
-![](https://github.com/kyoyo/ecshop/raw/master/images/intro2.png)
+![](images/intro2.png)
 
 
 
 ### 后台界面
 
-![](https://github.com/kyoyo/ecshop/raw/master/images/intro4.png)
+![](images/intro4.png)
 
 
 ### 计划增加功能
